@@ -8,8 +8,10 @@ namespace DiscreteMath
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            SearchTree.Runner r = new SearchTree.Runner();
-            r.Test1();
+            //SearchTree.Runner r = new SearchTree.Runner();
+            //r.Test1();
+            var t = new Quantifiers.Examples();
+            t.Test1();
         }
 
         
