@@ -1,5 +1,5 @@
 ﻿using System;
-namespace DiscreteMath
+namespace DiscreteMath.SearchTree
 {
     public class SetBySearchTree : ISet
     {
