@@ -1,6 +1,6 @@
 ﻿using System;
 //using DiscreteMath.SearchTree;
-
+using Exercises;
 namespace DiscreteMath
 {
     class Program
@@ -8,12 +8,10 @@ namespace DiscreteMath
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            //SearchTree.Runner r = new SearchTree.Runner();
-            //r.Test1();
-            var t = new Quantifiers.Examples();
-            t.Test1();
-        }
+            MaxPartialSum a = new MaxPartialSum();
+            a.run();
 
+        }
         
     }
 }

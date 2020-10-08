@@ -8,5 +8,6 @@
   <ItemGroup>
     <Folder Include="SearchTree\" />
     <Folder Include="Quantifiers\" />
+    <Folder Include="Exercises\" />
   </ItemGroup>
 </Project>
