@@ -21,10 +21,12 @@ namespace DiscreteMath.Exercises
         }
 
         int Fib2(int n) {
+           
             int a, b, i;
             if (n <= 0) return 0;
             a = 1; b = 0; i = 1;
             if (i != n) {
+                // inv: a = fib(i) and b = fib(i-1)
                 int tmp = a + b;
                 b = a;
                 a = tmp;
