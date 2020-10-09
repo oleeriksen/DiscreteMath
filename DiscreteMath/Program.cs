@@ -8,8 +8,10 @@ namespace DiscreteMath
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            MaxPartialSum a = new MaxPartialSum();
-            a.run();
+            Exercises.Fibo f = new Exercises.Fibo();
+
+            //MaxPartialSum a = new MaxPartialSum();
+            // a.run();
 
         }
         
