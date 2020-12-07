@@ -9,5 +9,7 @@
     <Folder Include="SearchTree\" />
     <Folder Include="Quantifiers\" />
     <Folder Include="Exercises\" />
+    <Folder Include="Pushdown\" />
+    <Folder Include="Grammar\" />
   </ItemGroup>
 </Project>

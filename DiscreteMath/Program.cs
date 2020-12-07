@@ -1,4 +1,6 @@
 ﻿using System;
+using DiscreteMath.Grammar;
+using DiscreteMath.Pushdown;
 //using DiscreteMath.SearchTree;
 using Exercises;
 namespace DiscreteMath
@@ -7,17 +9,12 @@ namespace DiscreteMath
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            Exercises.Fibo f = new Exercises.Fibo();
-
-            //MaxPartialSum a = new MaxPartialSum();
-            // a.run();
-            //... test branch
+            Runner r = new Runner();
+            //r.Run();
 
 
 
-            // this is made in test2
         }
-        
+
     }
 }
