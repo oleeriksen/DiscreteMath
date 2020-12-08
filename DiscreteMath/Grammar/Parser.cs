@@ -72,9 +72,9 @@ namespace DiscreteMath.Grammar
             int level = 0;
             for (int i = 0; i < s.Length; i++) {
                 if (s[i] == '(')
-                    level++;
+                    level++; else
                 if (s[i] == ')')
-                    level--;
+                    level--; else
                 if (s[i] == key && level == 0)
                     return i;
             }
