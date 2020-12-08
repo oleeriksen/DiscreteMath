@@ -10,12 +10,7 @@ namespace DiscreteMath
         static void Main(string[] args)
         {
             Runner r = new Runner();
-            //r.Run();
-
-
-            // this is made in test1
-
-
+            r.Run();
         }
 
     }

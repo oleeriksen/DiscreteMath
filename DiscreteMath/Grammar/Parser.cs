@@ -6,9 +6,10 @@ namespace DiscreteMath.Grammar
         /*S ⟶ T + S | T
           T ⟶ F * T | F
           F ⟶ ( S ) | V
-          V ⟶  a | b | … | z
+          V ⟶  a | b | … | z | N
+          N ⟶ number
          * 
-         */ 
+         */
         public Parser()
         {
         }
@@ -50,8 +51,19 @@ namespace DiscreteMath.Grammar
 
         private IExpression V(String s)
         {
-            
-            return new VarExpression(s[0]);
+            if ('a' <= s[0] && s[0] <= 'z')
+                return new VarExpression(s[0]);
+            // then it must be a number...
+            return N(s);
+        }
+
+        private IExpression N(String s)
+        {
+            String res = "";
+            int i = 0;
+            while (i < s.Length && char.IsDigit(s[i]))
+                res += s[i++];
+            return new NumberExpression(int.Parse(res));
         }
 
 

@@ -3,25 +3,24 @@ using System.Collections.Generic;
 
 namespace DiscreteMath.Grammar
 {
-    public class VarExpression : IExpression
+    public class NumberExpression : IExpression
     {
-        char mVar;
-        public VarExpression(char name)
+        int mValue;
+        public NumberExpression(int value)
         {
-            mVar = name;
+            mValue = value;
         }
 
         public string AsString()
         {
-            return ("[" + mVar + "]").ToUpper();
+            return mValue.ToString();
         }
 
-        public int Value => 0;
+        public int Value => mValue;
 
         public int ValueInState(Dictionary<char, int> state)
         {
-            return state[mVar];
+            return Value;
         }
-
     }
 }
